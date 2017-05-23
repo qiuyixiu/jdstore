@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   post '/rate' => 'rater#create', :as => 'rate'
   root 'products#index'
+=======
+  root 'welcome#index'
+>>>>>>> decorate_index
   devise_for :users
   namespace :admin do
     resources :products do
