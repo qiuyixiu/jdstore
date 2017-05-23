@@ -7,11 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u = User.new
-<<<<<<< HEAD
 u.email = "yixiu@yixiu.com"
-=======
-u.email = "admin@test.com"
->>>>>>> decorate_index
 u.password = "123456"
 u.password_confirmation = "123456"
 u.is_admin = true
