@@ -23,7 +23,7 @@
  $btn-color: #fff;
  $btn-background: #29426b;
  $btn-background-hover: #00DBE9;
- $db-image: url(https://ww4.sinaimg.cn/large/006tKfTcgy1ffsc021vm5j30zk09uagx.jpg);
+ $db-image:url(https://ww4.sinaimg.cn/large/006tKfTcgy1ffvhaiw9odj310o05igrp.jpg);
 
 
  //  common
@@ -41,19 +41,28 @@
     margin-bottom: 50px;
   }
 
+  .index-title {
+    color:#666;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+
+
  .section {
    padding-top: 50px;
    padding-bottom: 50px;
  }
 
  .short-line{
- display: block;
-     background: #ec644f;
+     display: block;
+     background: #C07F6F;
      border-style: none;
      border-radius: 0;
      margin-left: auto;
      margin-right: auto;
-     margin-top: 35px;
+     margin-top: 12px;
      margin-bottom: 20px;
      z-index: 53;
      width: 50px;
@@ -206,6 +215,7 @@
      }
    }
 
+
    // button
    .b-btn {
      width: 170px;
@@ -241,26 +251,38 @@
      }
    }
 
-   //我们可以为你提供
-   .advantage{
+   //门 part2
+   .door{
      text-align: center;
+     background-color: #fcf7f2;
+     margin:-15px;
+     padding-bottom: 18px;
    }
 
-   .h2.section-title {
-     color: #5E2116;
-     margin-bottom: 30px;
-     font-size: 24px;
-     font-weight: 700;
+   .men-zi {
+     line-height: 2.5em;
+     font-size: 1.2em;
+     color: #666;
+
    }
 
+   .open>img {
+     width:309px;
+     height:191px;
+
+   }
+
+
+//river
    .advantage-box {
      display: block;
      border-style: none;
      border-radius: 0;
      width: 290px;
      position: relative;
-     margin: 20px 15px 0;
+     margin: 5px 15px 20px;
      float: left;
+     text-align: center;
    }
 
    .image{
@@ -268,173 +290,118 @@
      height:10px;
    }
 
-   .advantage-box.h3 {
+   .advantage-box >h3 {
      color: #666;
      letter-spacing: 1px;
      line-height: 22px;
-     margin: 40px 25px 40px 25px;
+     margin: 25px 20px 25px 25px;
    }
 
-
- // 听听他们怎么说
- .home-people {
-   .person {
-     display: inline-block;
-     margin-top: 20px;
-     top: 0;
-     position: relative;
-     -webkit-transition: all .4s;
-     transition: all .4s;
-     &:hover {
-       position: relative;
-       top: -5px;
-     }
-     .avata-wrapper {
-       position: absolute;
-       width: 96px;
-       height: 96px;
-       padding: 5px;
-       left: 50%;
-       top: 10px;
-       margin-left: -53px;
-       border: dotted 1px #E6EDEF;
-       border-radius: 53px;
-       overflow: hidden;
-     }
-     .avata {
-       width: 100%;
-       height: 100%;
-       border-radius: 50%;
-     }
-     .intro {
-       margin-top: 108px;
-       .name {
-         text-align: center;
-       }
-       .invest {
-         float: right;
-         margin-right: 20px;
-         font-size: 14px;
-         line-height: 28px;
-         color: #fff;
-         font-weight: bold;
-       }
-     }
-     .words {
-       position: relative;
-       margin-top: 10px;
-       padding: 41px 20px 20px 25px;
-       border-radius: 3px;
-       color: #fff;
-       line-height: 25px;
-       text-align: left;
-       font-weight: bold;
-       overflow: hidden;
-       .bg {
-         position: absolute;
-         display: block;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background: #fff;
-         opacity: 0.7;
-         z-index: 0;
-       }
-       .quote {
-         position: absolute;
-         color: #aaa;
-         font-size: 16px;
-       }
-       .quote-l {
-         top: 10px;
-         left: 5px;
-       }
-       .quote-r {
-         bottom: 10px;
-         right: 5px;
-       }
-       .content {
-         position: relative;
-         height: 75px;
-         overflow: hidden;
-         font-size: 13px;
-         z-index: 0;
-         color: #333;
-       }
-     }
-   }
- }
-
- .section-content {
- //  width: 1000px;
-   padding-top: 35px;
-   margin: 0 auto;
-   text-align: center;
-   line-height: 1.8em;
-   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
- }
-
-
- //首页底图
- .base-image {
-   background-image: $db-image;
-   background-repeat: no-repeat;
-   background-size: cover;
-   // padding-bottom: 10px;
-   margin: 0 -15px 0;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-   position: relative;
-   height: 250px;
-   letter-spacing: 2px;
-
-
-   &::before {
-     content: "";
-     width: 100%;
-     height: 100%;
-   //  background-color: transparentize(#000, .55);
-     position: absolute;
-     top: 0;
-     left: 0;
-   }
-
-   .text-content {
-     position: absolute;
-     z-index: 2;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-   }
-
-     .lead {
-       margin-top: 90px;
-       margin-bottom: 150px;
-       text-align: center;
-       color: white;
-       .b-btn {
-         padding: 10px 20px;
-       }
-     }
-   }
-
-   //footer
-   .footer {
-       position: absolute;
-       bottom: 0;
-       width: 100%;
-       /* Set the fixed height of the footer here */
-       height: 100px;
-       background-color: #7c3a2d;
-
-       p {
-           color: white;
-           margin-top: 25px;
-       }
+   .advantage-box >p {
+     line-height: 1.8em;
+     font-size: 1em;
+     color:#666;
    }
 
 
 
+//欣赏成果 part4
+.we-do{
+    padding-bottom: 0px;
+    padding-top: 10px;
+    background-color: #fcf7f2;
+}
+
+.product-ul {
+  padding: 0 20px 0;
+  margin: 30px auto 0;
+  text-align: center;
+  overflow: hidden;
+  height: 620px;
+  width: 1154px;
+  li {
+    display: inline-block;
+    width: 300px;
+    height: 278px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    .product-img-wrap {
+      width:310px;
+      height: 270px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -webkit-transition: all .8s;
+        transition: all .8s;
+      }
+    }
+  }
+
+}
 
 
-//我们只做手工
+
+
+//ditu part5
+.base-image {
+  background-image: $db-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // padding-bottom: 10px;
+  margin: 0 -15px 0;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  position: relative;
+  height: 290px;
+  letter-spacing: 2px;
+
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+  //  background-color: transparentize(#000, .55);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .text-content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    .lead {
+      margin-top: 90px;
+      margin-bottom: 150px;
+      text-align: center;
+      color: white;
+      .b-btn {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  //footer
+  .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 90px;
+      background-color: #7c3a2d;
+
+      p {
+          color: white;
+          margin-top: 25px;
+      }
+  }
